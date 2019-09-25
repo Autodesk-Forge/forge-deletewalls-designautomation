@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>Delete Walls</Name>
+    <Assembly>.\Autodesk.DeleteWalls.Command.dll</Assembly>
+    <Text>Delete Walls</Text> 
+    <AddInId>50930344-E64B-4AF6-9AD8-3D23311D4B56</AddInId>
+     <FullClassName>DeleteWalls.DeleteWallsApp</FullClassName>
+    <Description>"Deletes Walls"</Description>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>
+       https://forge.autodesk.com/en/docs/design-automation/v3/tutorials/revit/
+    </VendorDescription>
+  </AddIn>
+</RevitAddIns>
