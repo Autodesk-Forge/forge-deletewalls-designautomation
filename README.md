@@ -10,11 +10,11 @@ DeleteWalls is an application that takes in a rvt file and outputs another rvt f
 
 This repository contains two folders. Each of them contains a C# project. The folders are:
 
-- [Desktop_Version](Desktop_Version)
+- [Desktop_Version](Desktop_Version) - 
   Contains a C# project of the DeleteWalls sample, which produces an add-in that runs on the desktop version of Revit.
 
-- [Design-Automation_Version](Design-Automation_Version)
-  Contains a C# project of the DeleteWalls sample, which produces an add-in runs on  Design Automation.
+- [Design-Automation_Version](Design-Automation_Version) - 
+  Contains a C# project of the DeleteWalls sample, which produces an add-in that runs on  Design Automation.
 
 Refer to the readme in each folder for details on each project.
 
