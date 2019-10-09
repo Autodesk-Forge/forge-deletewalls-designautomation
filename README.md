@@ -1,4 +1,4 @@
-# DeleteWalls Sample
+# DeleteWalls Sample (Desktop Version)
 
 [![.net](https://img.shields.io/badge/.net-4.5-green.svg)](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
 [![Design Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
