@@ -1,4 +1,4 @@
-# DeleteWalls Sample (Desktop Version)
+# DeleteWalls Sample 
 
 [![.net](https://img.shields.io/badge/.net-4.5-green.svg)](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
 [![Design Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
@@ -6,31 +6,15 @@
 
 ## Description
 
-DeleteWalls is a command that deletes all walls in the current file.
+DeleteWalls is an application that takes in a rvt file and outputs another rvt file with all of the walls removed. The files in this repository are to be used as exrecise files for a [tutorial](https://forge.autodesk.com/en/docs/design-automation/v3/tutorials/revit-edit/step1-convert-addin/) to convert a typical Revit add-in to a Design Automation ready Revit add-in.
 
-## Dependencies
+This repository contains two folders. Each of them contains a C# project. The folders are:
 
-This project was built in Visual Studio 2017. Download it [here](https://www.visualstudio.com/).
+- [Desktop_Version](Desktop_Version)
+  Contains a C# project of the DeleteWalls sample, which produces an add-in that runs on the desktop version of Revit.
 
-This sample references Revit 2018's `RevitAPI.dll` and `RevitAPIUI.dll`.
+- [Design-Automation_Version](Design-Automation_Version)
+  Contains a C# project of the DeleteWalls sample, which produces an add-in runs on  Design Automation.
 
-## Building DeleteWalls.sln
-
-Find `RevitAPI.dll` and `RevitAPIUI.dll` in your Revit 2018 install location and note its location. 
-
-Clone this repository and open `DeleteWalls.sln` in Visual Studio.  
-
-In the DeleteWalls C# project, repair the references to `RevitAPI` and `RevitAPIUI`.  You can do this by removing and re-adding the references, or by opening the `DeleteWalls.csproj` for edit and manually updating the reference paths.
-
-Build `DeleteWalls.sln` in `Release` or `Debug` configuration.
-
-## Using DeleteWalls
-
-Find `DeleteWalls.addin` and place in the Revit Addins folder (`C:\ProgramData\Autodesk\Revit\Addins\201*\` for Windows 7, 8, and 10).
-
-Edit the .addin file and edit the `<Assembly>` value to point to the location of `Autodesk.DeleteWalls.Command.dll`.
-
-Start up Revit and open a Revit file.
-
-Under the Add-Ins ribbon tab, click the External Tools drop-down, then click DeleteWalls.
+Refer to the readme in each folder for details on each project.
 
