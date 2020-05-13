@@ -6,7 +6,7 @@
 
 ## Description
 
-DeleteWalls is an application that takes in a rvt file and outputs another rvt file with all of the walls removed. The files in this repository are to be used as exrecise files for a [tutorial](https://forge.autodesk.com/en/docs/design-automation/v3/tutorials/revit-edit/step1-convert-addin/) to convert a typical Revit add-in to a Design Automation ready Revit add-in.
+DeleteWalls is an application that takes in a rvt file and outputs another rvt file with all of the walls removed. The files in this repository are to be used as exercise files for a [tutorial](https://forge.autodesk.com/en/docs/design-automation/v3/tutorials/revit-edit/step1-convert-addin/) to convert a typical Revit add-in to a Design Automation ready Revit add-in.
 
 This repository contains two folders. Each of them contains a C# project. The folders are:
 
