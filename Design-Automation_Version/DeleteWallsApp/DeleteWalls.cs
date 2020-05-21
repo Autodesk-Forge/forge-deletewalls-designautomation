@@ -24,8 +24,8 @@ namespace DeleteWalls
 
       public void HandleDesignAutomationReadyEvent(object sender, DesignAutomationReadyEventArgs e)
       {
-         e.Succeeded = true;
          DeleteAllWalls(e.DesignAutomationData);
+         e.Succeeded = true;
       }
 
       public static void DeleteAllWalls(DesignAutomationData data)
