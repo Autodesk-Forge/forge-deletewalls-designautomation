@@ -8,9 +8,10 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DeleteWalls</RootNamespace>
-    <AssemblyName>DeleteWalls</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AssemblyName>DeleteWalls-Design-Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,12 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DesignAutomationBridge">
-      <HintPath>DesignAutomationBridge.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="DesignAutomationBridge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autodesk.Forge.DesignAutomation.Revit.2021.0.1\lib\net48\DesignAutomationBridge.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPI">
-      <HintPath>RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,14 +55,19 @@
     <Content Include="PackageContents.xml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
-    <Content Include="DeleteWalls.addin">
+    <Content Include="DeleteWalls-Design-Automation.addin">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetPath)" "%25ProgramData%25/Autodesk\Revit\Addins\2021\"
+xcopy "$(TargetDir)*.pdb" "%25ProgramData%25/Autodesk\Revit\Addins\2021\"
+xcopy "$(ProjectDir)DeleteWalls-Design-Automation.addin" "%25ProgramData%25/Autodesk\Revit\Addins\2021\"
+xcopy "$(SolutionDir)packages\Autodesk.Forge.DesignAutomation.Revit.2021.0.1\lib\net48\DesignAutomationBridge.dll" "%25ProgramData%25/Autodesk\Revit\Addins\2021\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

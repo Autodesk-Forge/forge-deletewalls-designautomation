@@ -2,10 +2,10 @@
 <RevitAddIns>
   <AddIn Type="DBApplication">
     <Name>DeleteWalls</Name>
-    <Assembly>.\DeleteWalls.dll</Assembly>
+    <Assembly>.\DeleteWalls-Design-Automation.dll</Assembly>
     <AddInId>d7fe1983-8f10-4983-98e2-c3cc332fc978</AddInId>
     <FullClassName>DeleteWalls.DeleteWallsApp</FullClassName>
-    <Description>"Deletes Walls"</Description>
+    <Description>"Deletes Walls by Design Automation"</Description>
     <VendorId>Autodesk</VendorId>
     <VendorDescription>
     </VendorDescription>
