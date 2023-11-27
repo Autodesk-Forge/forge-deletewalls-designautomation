@@ -1,3 +1,5 @@
+# DEPRECATED
+This repository has been deprecated and migrated to https://github.com/Autodesk-Forge/forge-deletewalls-designautomation
 # DeleteWalls Sample 
 
 [![.net](https://img.shields.io/badge/.net-4.7|4.8-green.svg)](http://www.microsoft.com/en-us/download/details.aspx?id=30653)
